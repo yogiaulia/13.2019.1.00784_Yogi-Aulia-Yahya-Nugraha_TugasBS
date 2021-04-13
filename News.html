@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>koran</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: left;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  background: rgb(44, 44, 44);
+  overflow: hidden;
+}
+nav a {
+    float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+}
+/* Style the list inside the menu */
+nav ul {
+  float: left;
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Koran Abal Abal</h2>
+</header>
+
+<nav>
+    <ul>
+      <a href="home.html">home</a>
+      <a class="active" href="News.html">News</a>
+      <a href="Bola.html">Bola</a>
+      <a href="Healty.html">Healty</a>
+      <a href="Tren.html">Tren</a>
+    </ul>
+  </nav>
+
+<section>
+  <article>
+    <h1>MALING DITANGKAP</h1>
+    <img src="News.jpg" width="30%" height="50%">
+    <p>Maling Di Taman Pondok Jati Ditangkap Warga sekitar karena ketahuan mengambil dompet warga sekitar.
+        Pelaku tersebut berhasil di amankan dan dibawa ke Polres Taman Untuk dimintai keterangan.
+    </p>
+  </article>
+</section>
+
+<footer>
+  <p>artikel ini ditulis Yogi Aulia Yahya Nugraha</p>
+</footer>
+
+</body>
+</html>
